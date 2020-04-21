@@ -2,6 +2,7 @@ LN=/bin/ln
 
 all:  install
 install:
+	chmod a+x ./load.pl
 	test -L "netbone.pl" || $(LN) -s load.pl netbone.pl
 	test -L "idscron.pl" || $(LN) -s load.pl idscron.pl
 	test -L "agent.pl" || $(LN) -s load.pl agent.pl
