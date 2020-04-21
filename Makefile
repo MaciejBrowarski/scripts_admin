@@ -1,6 +1,6 @@
 LN=/bin/ln
 
-all: clean install
+all:  install
 install:
 	test -L "netbone.pl" || $(LN) -s load.pl netbone.pl
 	test -L "idscron.pl" || $(LN) -s load.pl idscron.pl
